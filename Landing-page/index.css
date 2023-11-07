@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.m {
+  background-color: lightblue;
+  min-height: 463.3px;
+}
+
+/* navbar */
+nav {
+  margin: 2px 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+ul li a {
+  padding: 0px 1.4rem;
+  color: black;
+  font-weight: 300;
+}
+ul li a:hover {
+  border-bottom: 2px solid black;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav div {
+  margin-right: 50%;
+}
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img img {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+  margin: 2rem;
+}
+main .slider-container {
+  display: flex;
+  justify-content: center;
+}
+main h1 {
+  text-align: center;
+}
+
+/* features */
+features {
+  border-top: 1px solid #ccc;
+  margin: 0px 2rem;
+}
+features .fc {
+  display: flex;
+  justify-content: center;
+}
+
+features > h1 {
+  text-align: center;
+}
+features .box1 {
+  width: 350px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  margin: 0px 2rem;
+}
+feautres > .box1 > div {
+  width: 100%;
+}
+
+features > .fc > div > div:nth-child(1) > img {
+  width: 100%;
+}
+features .second h2 {
+  text-align: center;
+}
+.second p {
+  padding: 2px 1.2rem;
+}
+
+/* reviews */
+section.reviews h1 {
+  text-align: center;
+}
+section.reviews > div {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin: 1rem auto;
+}
+section.reviews > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.reviews > div > .pd img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+section.reviews p {
+  text-align: center;
+}
+
+/* sponsores */
+section.sponsored h1 {
+  text-align: center;
+}
+section.sponsored > div {
+  display: flex;
+  justify-content: center;
+}
+
+section.sponsored img {
+  width: 300px;
+}
+
+/* contact */
+section.contact {
+  background-color: black;
+  color: white;
+  padding: 1.2rem;
+}
+section.contact h1 {
+  text-align: center;
+}
+body > section.contact > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.contact form button {
+  background-color: blue;
+  font-size: large;
+  color: white;
+  margin-top: 1rem;
+  padding: 2px 10px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+/* footer */
+footer {
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+  ul li a {
+    white-space: nowrap;
+  }
+  nav div {
+    margin-right: 35%;
+  }
+  section.sponsored img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav div {
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 680px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  /* .m {
+    height: 600px;
+  } */
+  features .fc {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  section.sponsored > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #icon {
+    position: absolute;
+    top: 8px;
+    right: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: lightskyblue;
+
+    padding: 10px 0px;
+    margin-top: 10px;
+  }
+
+  section.reviews > div {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #img img {
+    max-width: 290px;
+    width: 100%;
+  }
+  fetures {
+    margin: auto 10px;
+  }
+  features .box1 {
+    max-width: 300px;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 281px) {
+  #img img {
+    max-width: 200px;
+    width: 100%;
+  }
+  features .box1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #icon {
+    display: none;
+  }
+  nav .display {
+    display: flex;
+  }
+}
+
+.display {
+  display: none;
+}
